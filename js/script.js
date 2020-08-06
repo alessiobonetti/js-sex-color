@@ -4,25 +4,21 @@
 // INSERIMENTI DATI
 
 var nome = prompt("Inserisci il tuo nome");
-console.log(nome);
 
 var sesso = prompt("Inserisci il tuo sesso maschio o femmina");
-console.log(sesso);
 // CONFRONTO
 
 if (nome == "" || sesso == "") {
   alert("Inserimento non valido");
   nome = prompt("Inserisci il tuo nome");
   sesso = prompt("Inserisci il tuo sesso");
-} else if (sesso = "maschio") {
+} else if (sesso == "maschio") {
   document.getElementById("risultato").innerHTML = "Ciao" + " ";
   document.getElementById("nome_stampato").innerHTML = nome ;
-  nome.className = "colore_azzurro";
+  nome_stampato.className = "colore_azzurro";
 
-  console.log(nome);
-} else (sesso = "femmina")
+} else if (sesso == "femmina") {
   document.getElementById("risultato").innerHTML = "Ciao" + " ";
   document.getElementById("nome_stampato").innerHTML = nome ;
-  nome.className = "colore_rosa";
-
-  console.log(nome);
+  nome_stampato.className = "colore_rosa";
+}
